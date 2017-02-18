@@ -1,0 +1,4 @@
+raw data: /workspace/projects/TES/data/20170126_TES5_n012_distinguishibility_20MHz_tau_vs_offset/single
+processed data: /workspace/projects/TES/analysis/20170126_TES5_n012_distinguishibility_20MHz_tau_vs_offset_results/area_histogram/
+height threshold used 0.0075
+area windowed using 'discriminator'

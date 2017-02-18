@@ -1,0 +1,64 @@
+\begin{frame}\frametitle{Motivation}
+  \begin{center}
+      \begin{block}{Measure 2nd-order correlation function with a single detector}
+      \begin{itemize}
+        \item Avoids spatial multiplexing of Hanbury-Brown-Twiss
+        \item Applicable to Satellites \blfootnote{J.W. Fowler, ApJS \textbf{219} 35 (2015)} 
+      \end{itemize}
+      \end{block}
+    \end{center}
+\end{frame}
+
+\begin{frame}\frametitle{Outline}
+  \begin{itemize}
+    \item Transition-Edge Sensor \& Setup
+    \item Photon-Number Resolution
+    \item Time-of-Arrival Estimation
+    \item 2nd-Order Correlation of Continuous Source
+  \end{itemize}
+\end{frame}
+
+\begin{frame}\frametitle{Transition-Edge Sensor}
+  \begin{center}
+      \begin{itemize}
+        \item Photon-Number Resolving
+        \item Near unit Efficiency
+        \item Long Recovery Time ($\approx 2 \mu s$) limits flux detection rates\
+      \end{itemize}
+    \includegraphics[width=0.7\textwidth]{images/comparator/overlapping_pulses.eps}
+    \end{center}
+\end{frame}
+
+\begin{frame}\frametitle{Transition-Edge Sensor}
+    
+  Photon absorbed $\rightarrow$ Temperature increases $\rightarrow$ Resistance increases
+
+  \begin{columns}
+  \column{.5\textwidth}
+    \begin{center}
+    \includegraphics[width=1.2\linewidth]{images/tes_principle/TES.pdf}
+    \end{center}
+  \column{.5\textwidth}
+    \begin{center}
+    \includegraphics[width=0.5\linewidth]{images/electronics/tes_only_electronics.eps}
+    \end{center}
+  \end{columns}
+\blfootnote{A.E.Lita, Proc. SPIE 7681, Adv Photon Counting Techniques IV, 76810D (2010)}
+\end{frame}
+
+\begin{frame}\frametitle{Photon Number Discrimination}
+  \begin{center}
+  Light source: Pulsed Laser Diode\\
+  Pulse Area $\propto$ Photon Number
+  \begin{columns}
+    \column{.6\textwidth}
+        \begin{center}
+          \includegraphics[width=1\textwidth]{images/persistence_plot/persistence.pdf}
+        \end{center}
+    \column{.6\textwidth}
+        \begin{center}
+          \includegraphics[width=1\textwidth]{images/area_histogram_single_diode_pulse/area_histo.pdf}
+        \end{center}
+    \end{columns}
+  \end{center}
+\end{frame}

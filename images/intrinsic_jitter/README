@@ -1,0 +1,24 @@
+CALCULATES JITTER FOR SHIFT-CORRECTED PULSES
+
+raw data: /workspace/projects/TES/data/20170126_TES5_n012_distinguishibility_20MHz_tau_vs_offset
+processed data: /workspace/projects/TES/analysis/20170126_TES5_n012_distinguishibility_20MHz_tau_vs_offset_results/intrinsic_jitter
+
+Height threshold = 0.0075
+single photon traces via windowed area filtering
+
+
+Code sections used to generate single photon trace and stderr:
+from pulse_averaging:
+
+time_p, signal_p = trace_ave(filelist[mask_1ph])
+def one_pulse(x, x_offset=0, amplitude=1):
+	"""convert the sample single photon pulse into a function
+	that can be used in a fit
+	"""
+	x = x - x_offset
+	return amplitude * np.interp(x, time_p, signal_p)
+
+fit_model = Model(one_pulse)
+time_f, signal_f, signal_var_f = fit_corrected_pulse(filelist[mask_1ph], fit_model,
+									   t_initial,
+									   t_final)

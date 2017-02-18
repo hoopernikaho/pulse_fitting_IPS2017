@@ -1,0 +1,72 @@
+\begin{frame}\frametitle{Time-of-Arrival Estimation}
+  \begin{center}
+  \item \textcolor{gray}{Model:} $A_1S(t-t_1) + A_2S(t-t_2)$
+  \begin{columns}
+  \column{0.5\textwidth}
+  \begin{enumerate}
+    \item Select 2-photon signals (pulse area)
+    \item Detect Pulse edges (filter + differentiate)
+    \item 2 Edges
+        \begin{itemize}
+        \item Initialise using Pulse Edges Timings
+        \item Least Squares Fit
+        \end{itemize}
+    \item 1 Edge
+        \begin{itemize}
+        \item Initialise using Pulse Region
+        \item Monte-Carlo Markov Chain Fit
+        \end{itemize}
+  \end{enumerate}
+  \column{0.5\textwidth}
+  \includegraphics[width=\textwidth]{images/edge_detection_demonstration/edge_detection_by_diff.eps}
+  \end{columns}
+  \end{center}
+\end{frame}
+
+\begin{frame}\frametitle{Single-Photon Detection Model}
+  \begin{center}
+      % \begin{block}{}
+      \begin{itemize}
+      \begin{center}
+        \item Select 5000 single-photon pulses
+        \item Correct for Vertical \& Horizontal Offset
+        \item Average
+      \end{center}
+      \end{itemize}
+    % \end{block}
+    \includegraphics[width=0.7\textwidth]{images/intrinsic_jitter/jitter.eps}
+    \end{center}
+\end{frame}
+
+\begin{frame}\frametitle{Self-Correlation $G^{(2)}$}
+  \begin{center}
+  CW Laser Diode
+    \includegraphics[width=\textwidth]{images/g2_cw_source/g2_cw_binsize_250ns.eps}
+    \end{center}
+\end{frame}
+
+\begin{frame}\frametitle{Self-Correlation $G^{(2)}$}
+  \begin{center}
+  CW Laser Diode
+    \includegraphics[width=\textwidth]{images/g2_cw_source/g2_cw_binsize_250ns.eps}
+    \end{center}
+\end{frame}
+
+\begin{frame}\frametitle{Self-Correlation $G^{(2)}$\\Fit Accuracy}
+  \begin{center}
+  Light Source: Laser Diode Pulse Pairs
+  \begin{columns}
+  \column{.5\textwidth}
+  \begin{center}
+  Seperation > 200ns
+    \includegraphics[width=\textwidth]{images/fit_accuracy/fitted_vs_actual_pulse_separation.eps}
+  \end{center}
+  \column{.5\textwidth}
+  \begin{center}
+  Seperation = 200ns
+  \includegraphics[width=\textwidth]{images/fit_accuracy/200ns/200ns_g2.pdf}
+  \end{center}
+  \end{columns}
+  \end{center}
+\end{frame}
+

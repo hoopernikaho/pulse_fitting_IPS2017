@@ -1,0 +1,108 @@
+\documentclass{beamer}
+
+\newcommand{\ket}[1]{\left|#1\right\rangle}
+\newcommand{\op}[1]{\boldsymbol{\mathit{#1}}}
+\newcommand\blfootnote[1]{%
+  \begingroup
+  \renewcommand\thefootnote{}\footnote{\tiny #1}%
+  \addtocounter{footnote}{-1}%
+  \endgroup
+}
+\usepackage{booktabs}
+\usepackage{bbold} 
+\usepackage{xcolor} 
+\usepackage{color}
+\usepackage{dsfont}
+\usepackage[english]{babel}
+\usepackage[latin1]{inputenc}
+\usepackage{times}
+\usepackage{tabularx}
+\usepackage{multirow}
+\usepackage{tikz}
+\usepackage[T1]{fontenc}
+\usepackage{xfrac}
+\usepackage{graphicx}
+\usepackage{mathtools}
+\usepackage{physics}
+\DeclareGraphicsRule{.ai}{pdf}{.ai}{}
+
+\mode<presentation>
+{
+	\usetheme{Singapore}
+	\usecolortheme{dove} %% Grigio
+	\setbeamercovered{transparent}
+}
+
+
+%\setbeamertemplate{footline}[frame number] 
+\expandafter\def\expandafter\insertshorttitle\expandafter{%
+  \insertshorttitle\hfill%
+  \insertframenumber\,/\,\inserttotalframenumber}
+
+\setbeamertemplate{navigation symbols}{} %no nav symbols
+\setbeamertemplate{itemize item}{}
+\setbeamertemplate{headline}{}
+
+\title[]{Photon-number and timing resolution of a near-IR continuous-wave source with a transition edge sensor \break IPS 2017}
+% \subtitle{}
+
+\author[A. Cer{\`e}] % (optional, use only with lots of authors)
+{Jianwei Lee*, Lijiong Shen, Brenda Chng, Alessandro Cere, Christian Kurtsiefer}
+
+% \pgfdeclareimage[height=1.3cm]{university-logo-full}{Images/logo}
+\institute[CQT] % (optional, but mostly needed)
+{
+%   \inst{1}%
+\begin{columns}
+  \column{.4\textwidth}
+  \begin{center}    
+    \includegraphics[width=0.8\textwidth]{images/NUS_Logo.ai}
+    \end{center}  
+  \column{.5\textwidth}
+  \begin{center}
+  	 \includegraphics[width=\textwidth]{images/CQTLogo.ai}\\
+		 Quantum Optics Group	
+  \end{center}
+\end{columns}
+}
+
+\date{}
+% \date{
+%   \begin{center}
+%   IPS 2015\\
+%   4 Mar \\
+%   01.50pm $-$ 02.05pm
+%   \end{center}
+% }
+% \date[]{04/03/2015} % (optional, should be abbreviation of conference name)
+%{Centre for Quantum Technology - UKZN}
+\subject{Pulse Fitting}
+% This is only inserted into the PDF information catalog. Can be left
+% out. 
+
+%\pgfdeclareimage[height=0.5cm]{university-logo}{images/cqtblue_notext}
+%\logo{\pgfuseimage{university-logo}}
+
+% \AtBeginSection[]
+% { \addtocounter{framenumber}{-1}
+%   \begin{frame}<beamer>[plain]
+%     \frametitle{Outline}
+%     \tableofcontents[currentsection,currentsubsection]
+%   \end{frame}
+% }
+
+
+\begin{document}
+
+\begin{frame}[plain]
+  \setcounter{framenumber}{0}
+  \titlepage
+\end{frame} 
+
+\include{fit_intro}
+\include{area_resolution}
+\include{fit_steps}
+\include{conclusion}
+\include{Q&A}
+\end{document}
+%EOF

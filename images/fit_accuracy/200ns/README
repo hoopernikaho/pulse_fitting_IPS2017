@@ -1,0 +1,9 @@
+raw data: /workspace/projects/TES/data/20170126_TES5_n012_distinguishibility_20MHz_tau_vs_offset/200ns/
+processed data: /workspace/projects/TES/analysis/20170126_TES5_n012_distinguishibility_20MHz_tau_vs_offset_results/fit_accuracy/200ns/200ns_separation_offset_amplitude_data.txt
+raw data acquisition script: /workspace/projects/TES/analysis/20170126_TES5_n012_distinguishibility_20MHz_tau_vs_offset_results/fit_accuracy/processing_without_prefiltering.py
+
+Other data not considered / Why they are in this folder
+'/workspace/projects/TES/analysis/20170126_TES5_n012_distinguishibility_20MHz_tau_vs_offset_results/fit_accuracy/200ns/200ns_separation_offset_amplitude_init_data.txt'	was the result of mcmc which was used to initialise a leastsq fit 
+for '/workspace/projects/TES/analysis/20170126_TES5_n012_distinguishibility_20MHz_tau_vs_offset_results/fit_accuracy/200ns/200ns_separation_offset_amplitude_data.txt'
+
+/workspace/projects/TES/analysis/20170126_TES5_n012_distinguishibility_20MHz_tau_vs_offset_results/fit_accuracy/200ns/200ns_separation_tau.txt 
